@@ -209,6 +209,9 @@ Examples:
 * `link sn/John Tan pn/Mrs Tan` Links student John Tan with parent Mrs Tan.
 * `link sn/Aisha Lim sp/91234567 pn/Mr Lim pp/92345678` Links the student and parent when there are duplicate names.
 
+<img src="images/linkAlexJohn.png" alt="link alex john" width="400" style="height:auto;">
+<img src="images/linkedAlexJohn.png" alt="linked alex john" width="400" style="height:auto;">
+
 Notes:
 * A student can be linked to multiple parents (e.g., mother and father).
 * A parent can be linked to multiple students (e.g., siblings).
