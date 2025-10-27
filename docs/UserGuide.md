@@ -204,7 +204,7 @@ Format: `link sn/STUDENT_NAME [sp/STUDENT_PHONE] pn/PARENT_NAME [pp/PARENT_PHONE
 * `sp/` — phone number of the student (optional, used for disambiguation)
 * `pn/` — name of the parent contact (required)
 * `pp/` — phone number of the parent (optional, used for disambiguation)
-* 
+
 Examples:
 * `link sn/John Tan pn/Mrs Tan` Links student John Tan with parent Mrs Tan.
 * `link sn/Aisha Lim sp/91234567 pn/Mr Lim pp/92345678` Links the student and parent when there are duplicate names.
