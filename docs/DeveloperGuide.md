@@ -726,18 +726,19 @@ testers are expected to do more *exploratory* testing.
 
 ### Filter contacts by tag
 
-Prerequisites: 
-1. Ensure that contacts have been added with specific tags (e.g., add n/John Tan p/98765432 e/john@example.com a/Blk 1 t/Math, add n/Jane Doe p/91234567 e/jane@example.com a/Blk 2 t/Science).
-2. Ensure the desired tags are already in the tag list. If not, use addtag.
+1. Displays all contacts with the given tags if the tags exist
 
-1. Displays all contacts with the given tags if the tags exist 
-   1. **Test case:** `filter t/Math`<br>
+   1. **Prerequisites:** 
+      Ensure that contacts have been added with specific tags (e.g., add n/John Tan p/98765432 e/john@example.com a/Blk 1 t/Math, add n/Jane Doe p/91234567 e/jane@example.com a/Blk 2 t/Science).
+      Ensure the desired tags are already in the tag list. If not, use addtag.
+
+   2. **Test case:** `filter t/Math`<br>
       Expected: Display all contacts with the "Math" tag.
-   2. **Test case:** `filter t/Science`<br>
+   3. **Test case:** `filter t/Science`<br>
       Expected: Display all contacts with the "Science" tag.
-   3. **Test case:** `filter t/Math t/Science`<br>
+   4. **Test case:** `filter t/Math t/Science`<br>
       Expected: Display all contacts with either "Math" or "Science" tags.
-   4. **Test case:** `filter t/English` when no contacts have "English" tag <br>
+   5. **Test case:** `filter t/English` when no contacts have "English" tag <br>
       Expected: No contacts found with the "English" tag.
 
 ### Saving data
@@ -750,10 +751,7 @@ Prerequisites:
 2. Dealing with corrupted data
 
     1. Open `addressbook.json` and manually edit its contents to invalid JSON (e.g., delete a bracket, or change a field name). Then relaunch the app.
-       Expected: App detects invalid data and starts with an empty address book. An error message is shown in the terminal indicating the data could not be loaded. The corrupted file is not overwritten until a modifying command is executed.
-
-<div markdown="span" class="alert alert-info">:information_source: **Note:** Corruption must result in invalid JSON (not just editing a value). E.g., removing a " or } is a valid test.
-</div>
+       Expected: App detects invalid data and starts with an empty address book. An error message is shown in the terminal indicating the data could not be loaded. The corrupted file is not overwritten until a modifying command is executed. 
 
 3. Verifying Data is Saved Across Sessions
 
